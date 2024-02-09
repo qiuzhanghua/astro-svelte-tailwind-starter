@@ -10,6 +10,12 @@
   }, 30);
 </script>
 
-<div style="font-size: {fontSize}px" class="bg-blue-700 text-white">
+<div style="font-size: {fontSize}px">
   Hello {name}, from Svelte
 </div>
+
+<style>
+  div {
+    @apply bg-blue-700 text-white;
+  }
+</style>

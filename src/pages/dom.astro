@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import DomUsage from "../components/DomUsage.svelte";
+import Custom from "../components/Custom.svelte";
 interface Props {
   title: string;
 }
@@ -9,4 +10,5 @@ const { title } = Astro.props;
 
 <BaseLayout title={title}>
   <DomUsage client:only />
+  <Custom client:only />
 </BaseLayout>

@@ -2,6 +2,7 @@
 // Component Imports
 import Button from "../components/Button.astro";
 import Hello from "../components/Hello.svelte";
+import Custom from "../components/Custom.svelte";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -12,7 +13,6 @@ import Hello from "../components/Hello.svelte";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
     <title>Astro + Svelte + TailwindCSS</title>
   </head>
 
@@ -24,5 +24,6 @@ import Hello from "../components/Hello.svelte";
       >
       <Hello name="Daniel" fontSize={32} client:only />
     </div>
+    <Custom client:only />
   </body>
 </html>

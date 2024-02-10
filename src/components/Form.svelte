@@ -18,3 +18,7 @@
 
   <button type="submit">Submit</button>
 </form>
+
+<button class="border p-2 bg-purple-200 font-bold" on:click|once
+  >Click once</button
+>

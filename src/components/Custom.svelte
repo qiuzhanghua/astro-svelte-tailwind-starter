@@ -7,4 +7,9 @@
   }
 </script>
 
-<Form on:form_submit={onFormSubmit} />
+<Form
+  on:form_submit={onFormSubmit}
+  on:click={() => {
+    console.log('Button was clicked!');
+  }}
+/>
